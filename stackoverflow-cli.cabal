@@ -1,0 +1,22 @@
+Name:                so
+Version:             1.1
+Synopsis:            Stackoverflow for CLI
+Description:         Lightweight so search / browsing in CLI, written in Haskell.
+Homepage:            https://github.com/mbixby/stackoverflow_cli
+License:             GPL-3
+License-file:        LICENSE
+Author:              mbixby
+Maintainer:          contact@raspberryapps.com
+Category:            Development
+Build-type:          Simple
+Extra-source-files:  README.md
+Cabal-version:       >= 1.6
+
+Executable so
+  Main-is: so.hs   
+  Extensions: RankNTypes
+  Build-depends: base >= 2 && <= 4.5, transformers, web-encodings, http-conduit, aeson, HTTP, MissingH, old-locale, old-time, bytestring
+
+Source-repository head
+  Type:     git
+  Location: https://github.com/mbixby/stackoverflow_cli
